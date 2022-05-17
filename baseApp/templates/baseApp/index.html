@@ -1,0 +1,17 @@
+
+<p1>
+{% for podatok in potr %}
+  {{podatok.title}}
+ 
+{% endfor %}
+Helooo
+</p1>
+<form method="POST">
+  {% csrf_token %}
+  <input type="text" name="title" id="title">
+<input type="text" name="duration" id="duration">
+<input type="text" name="description" id="description">
+<button type="submit">Submit the Course</button>
+</form>
+
+
